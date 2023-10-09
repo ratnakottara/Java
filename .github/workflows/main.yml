@@ -43,7 +43,6 @@ jobs:
           echo "sonar.login=${{ secrets.SONAR_TOKEN }}" >> sonar-scanner/sonar-scanner-5.0.0.2966-linux/conf/sonar-scanner.properties
           echo "sonar.projectKey=sample" >> sonar-scanner/sonar-scanner-5.0.0.2966-linux/conf/sonar-scanner.properties
           ./sonar-scanner/sonar-scanner-5.0.0.2966-linux/bin/sonar-scanner -X
-
       - name: Change to repository root
         run: cd $GITHUB_WORKSPACE
 
